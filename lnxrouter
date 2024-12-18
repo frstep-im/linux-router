@@ -2003,6 +2003,10 @@ write_dnsmasq_conf() {
 		bogus-priv
 		domain-needed
 	EOF
+
+    # Add custom expected device reservations
+    cat dnsmasq_custom.conf >> "$CONFDIR/dnsmasq.conf"
+
     # 'log-dhcp'(Extra logging for DHCP) shows too much logs.
     # if use '-d', 'log-facility' should = /dev/null
     if [[ $SHARE_METHOD == "none" ]]; then    
