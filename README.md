@@ -1,4 +1,6 @@
-# Linux-router
+# Linux-router for Soter
+
+Custom tweaks for Soter - do not merge into master
 
 Set Linux as router in one command. Able to provide Internet, or create WiFi hotspot. Support transparent proxy (redsocks). Also useful for routing VM/containers.
 
